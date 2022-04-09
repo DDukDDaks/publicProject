@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML 문법</title>
-    
+    <link href="https://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
     <style type="text/css">
 	    a:link { color: #2E3C7E; text-decoration: none;}
 	    a:visited { color: #2E3C7E; text-decoration: none;}
 	    a:hover { color: blue; text-decoration: underline;}
 	    body {
 	        background-color: #e7e7e7;
+	        font-size: xx-large;
+	        font-family: 'Jeju Gothic', sans-serif;
 	    }
 	</style>
 
@@ -19,41 +21,71 @@
 
 
 
+	<li>
 	<a href=#none id="show" onclick="if(hide1.style.display=='none') {hide1.style.display='';show.innerText='▲접기'} else {hide1.style.display='none';show.innerText='텍스트 활용'}">텍스트 활용</a>
 	<div id="hide1" style="display: none">
-		<h2>텍스트 활용</h2>
+		<fieldset>
 			<p>p태그는 단락</p>
 			<h2>제목태그 h2</h2>
 			<h6>제목태그 h6</h6>
 			br 태그는 줄바꿈 <br>
 			<b>볼드체</b>
 			<i>이탤릭체</i>
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;p&gt;p태그는 단락&lt;/p&gt;
+&lt;h2&gt;제목태그 h2&lt;/h2&gt;
+&lt;h6&gt;제목태그 h6&lt;/h6&gt;
+br 태그는 줄바꿈 &lt;br&gt;
+&lt;b&gt;볼드체&lt;/b&gt;
+&lt;i&gt;이탤릭체&lt;/i&gt;
+</pre>
+		</fieldset>
 	</div>
 	<div></div>	
 
-
+	<li>
 	<a href=#none id="show" onclick="if(hide2.style.display=='none') {hide2.style.display='';show.innerText='▲접기'} else {hide2.style.display='none';show.innerText='이미지'}">이미지</a>
 	<div id="hide2" style="display: none">
-		<h2>이미지</h2>
+		<fieldset>
 			<img src="https://ssl.pstatic.net/sstatic/search/nlogo/20220407161104.png">
 			<img src="https://ssl.pstatic.net/sstatic/search/nlogo/20220407161104.png" width="300px" height="300px">
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;img src=&quot;https://ssl.pstatic.net/sstatic/search/nlogo/20220407161104.png&quot;&gt;
+&lt;img src=&quot;https://ssl.pstatic.net/sstatic/search/nlogo/20220407161104.png&quot; width=&quot;300px&quot; height=&quot;300px&quot;&gt;
+</pre>
+		</fieldset>
 	</div>
 	<div></div>	
 
-
+	<li>
 	<a href=#none id="show" onclick="if(hide3.style.display=='none') {hide3.style.display='';show.innerText='▲접기'} else {hide3.style.display='none';show.innerText='하이퍼링크'}">하이퍼링크</a>
 	<div id="hide3" style="display: none">
-		<h2>하이퍼링크</h2>
+		<fieldset>
 			<a href="https://ddukddaks.github.io/publicProject/">북치기 깃</a> <br>
 			<a href="https://ddukddaks.github.io/publicProject/" target="_blank">북치기 깃 새창</a>
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;a href=&quot;https://ddukddaks.github.io/publicProject/&quot;&gt;북치기 깃&lt;/a&gt; &lt;br&gt;
+&lt;a href=&quot;https://ddukddaks.github.io/publicProject/&quot; target=&quot;_blank&quot;&gt;북치기 깃 새창&lt;/a&gt;
+</pre>
+
+		</fieldset>
 	</div>
 	<div></div>		
 
-	
+	<li>		
 	<a href=#none id="show" onclick="if(hide4.style.display=='none') {hide4.style.display='';show.innerText='▲접기'} else {hide4.style.display='none';show.innerText='테이블'}">테이블</a>
 	<div id="hide4" style="display: none">
-		<h2>테이블</h2>
-			<table border="1" width="100" >
+		<fieldset>
+			<table border="1" >
 				<thead>
 					<tr>
 						<th>순번</th>
@@ -71,13 +103,37 @@
 					</tr>
 				</tbody>
 			</table>
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;table border=&quot;1&quot; &gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;순번&lt;/th&gt;
+			&lt;th&gt;성함&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;		
+		&lt;tr align=&quot;center&quot;&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;북치기&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr align=&quot;center&quot;&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;여비&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+		</fieldset>
 	</div>
 	<div></div>			
 	
-
+	<li>
 	<a href=#none id="show" onclick="if(hide5.style.display=='none') {hide5.style.display='';show.innerText='▲접기'} else {hide5.style.display='none';show.innerText='목록태그'}">목록태그</a>
 	<div id="hide5" style="display: none">
-		<h2>목록태그</h2>
+		<fieldset>		
 			<ul>나는솔로 남자이름
 				<li>영수</li>
 				<li>영식</li>
@@ -88,26 +144,61 @@
 				<li>빵을 살짝 굽는다</li>	
 				<li>잼을바르고..</li>
 			</ol>
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;ul&gt;나는솔로 남자이름
+	&lt;li&gt;영수&lt;/li&gt;
+	&lt;li&gt;영식&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+	샌드위치 만드는방법
+	&lt;li&gt;빵을 살짝 굽는다&lt;/li&gt;	
+	&lt;li&gt;잼을바르고..&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+		</fieldset>
 	</div>
 	<div></div>			
 
-	
+	<li>	
 	<a href=#none id="show" onclick="if(hide6.style.display=='none') {hide6.style.display='';show.innerText='▲접기'} else {hide6.style.display='none';show.innerText='form, input'}">form, input</a>
 	<div id="hide6" style="display: none">
-		<h2>form, input</h2>
-		<form>
-			<input type="text" name="ID" placeholder="ID"> <br>
-			<input type="password" name="PW" placeholder="PW"> <br>
-			<label>
-				Book<input type="radio" name="hobby" value="book">
-			</label>
-			<label>
-				Study<input type="radio" name="hobby" value="Study">
-			</label><br>
-			<input type="submit" value="LOGIN">
-		</form>
+		<fieldset>
+			<form>
+				<input type="text" name="ID" placeholder="ID"> <br>
+				<input type="password" name="PW" placeholder="PW"> <br>
+				<label>
+					Book<input type="radio" name="hobby" value="book">
+				</label>
+				<label>
+					Study<input type="radio" name="hobby" value="Study">
+				</label><br>
+				<input type="submit" value="LOGIN">
+			</form>
+		</fieldset>
+
+		<fieldset>
+<pre>
+&lt;form&gt;
+	&lt;input type=&quot;text&quot; name=&quot;ID&quot; placeholder=&quot;ID&quot;&gt; &lt;br&gt;
+	&lt;input type=&quot;password&quot; name=&quot;PW&quot; placeholder=&quot;PW&quot;&gt; &lt;br&gt;
+	&lt;label&gt;
+		Book&lt;input type=&quot;radio&quot; name=&quot;hobby&quot; value=&quot;book&quot;&gt;
+	&lt;/label&gt;
+	&lt;label&gt;
+		Study&lt;input type=&quot;radio&quot; name=&quot;hobby&quot; value=&quot;Study&quot;&gt;
+	&lt;/label&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;LOGIN&quot;&gt;
+&lt;/form&gt;
+</pre>
+		</fieldset>
 	</div>
-	<div></div>			
+	<div>
+		
+	</div>			
 
 
 	<br><br><br>
