@@ -17,12 +17,12 @@
 <body>
 
 	
-	<h1>웹에서 제어하기</h1>
+	<h1>웹에서 제어하기 / F12 개발자모드</h1>
 
-	<a href=#none id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='ById'}">ById</a>
+	<li><a href=#none id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='ById'}">ById</a></li>
 	<div id="hide" style="display: none">
 		<fieldset>
-			<legend>ById</legend>
+			<!-- <legend>ById</legend> -->
 			<li>id는 단독자라 따로따로 불러옵니다.</li>
 			<li>document.getElementById('id_text_1').text;
 			<li><a id="id_text_1" href="#">네이버</a></li>
@@ -39,10 +39,10 @@
 
 	</div>
 	<div></div>
-	<a href=#none id="show" onclick="if(hide1.style.display=='none') {hide1.style.display='';show.innerText='▲접기'} else {hide1.style.display='none';show.innerText='ByClassName'}">ByClassName</a>
+	<li><a href=#none id="show" onclick="if(hide1.style.display=='none') {hide1.style.display='';show.innerText='▲접기'} else {hide1.style.display='none';show.innerText='ByClassName'}">ByClassName</a></li>
 	<div id="hide1" style="display: none">
 		<fieldset>
-		<legend>ByClassName</legend>
+		<!-- <legend>ByClassName</legend> -->
 			<li>class는 여러곳에 쓸 수 있기 때문에 [n]번호순대로 불러옵니다.
 			<li>
 				document.getElement<span style="color:red;">s</span>ByClassName('class_text')<span style="color:red;">[0]</span>.text;
@@ -73,10 +73,10 @@
 	</div>
 	<div></div>
 	
-	<a href=#none id="show" onclick="if(hide2.style.display=='none') {hide2.style.display='';show.innerText='▲접기'} else {hide2.style.display='none';show.innerText='querySelector'}">querySelector</a>
+	<li><a href=#none id="show" onclick="if(hide2.style.display=='none') {hide2.style.display='';show.innerText='▲접기'} else {hide2.style.display='none';show.innerText='querySelector'}">querySelector</a></li>
 	<div id="hide2" style="display: none">
 		<fieldset>
-		<legend>querySelector</legend>
+		<!-- <legend>querySelector</legend> -->
 			<li>페이지 내 어떠한 요소를 찾는 방법
 			<li>class와 id를 똑같이 다룰 수 있다.</li>
 			
@@ -98,10 +98,10 @@
 	</div>
 	<div></div>	
 
-	<a href=#none id="show" onclick="if(hide3.style.display=='none') {hide3.style.display='';show.innerText='▲접기'} else {hide3.style.display='none';show.innerText='querySelectorAll'}">querySelectorAll</a>
+	<li><a href=#none id="show" onclick="if(hide3.style.display=='none') {hide3.style.display='';show.innerText='▲접기'} else {hide3.style.display='none';show.innerText='querySelectorAll'}">querySelectorAll</a></li>
 	<div id="hide3" style="display: none">
 		<fieldset>
-		<legend>querySelectorAll</legend>
+		<!-- <legend>querySelectorAll</legend> -->
 			<li>사용법은 querySelector와 동일
 			<li>해당하는 모든 것을 가져오므로 순서를 부여함.
 			<li>document.querySelectorAll('.class_value')[1].value
